@@ -13,7 +13,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
-
+import Button from '@material-ui/core/Button';
 import withRoot from './withRoot';
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -131,9 +131,9 @@ const App = props => {
       <Typography variant="h1" color="primary" className={classes.header}>
         Beermile
       </Typography>
-      <Typography variant="body1">
-        Der Wettkampfleiter läd ein
-      </Typography>
+
+
+
     </Section>
     <Hero
       img="img/beermile-6.jpeg" />
@@ -141,20 +141,20 @@ const App = props => {
       <Checklist
         items={[
           "am 02. Oktober 2021",
-          "Start 17:00 Uhr",
+          "17:00 Start der Profimeile",
+          "17:30 Start der Jedermannmeile",
           "im LAZ Wien",
           "Meiereistraße 18, 1020 Wien"
         ]} />
+      <Button href="doc/beermile2021.pdf" target="_blank" >Download Ausschreibung</Button>
+
     </Section>
     <Hero
       img="img/beermile-8.jpeg" />
     <Section heading="Nennung & Meldung">
-      <Typography variant="body1">
-        Mindestens 15min vor Start beim Wettkampfleiter (Getränkekontrolle)
-      </Typography>
       <Checklist
         items={[
-          "Die Aktion findet nur bei Schönwetter statt (eventuelle Absage erfolgt am Freitag)",
+          " Mindestens 30 min vor dem Start beim Wettkampfleiter (Getränkekontrolle)", "Die Aktion findet nur bei Schönwetter statt (eventuelle Absage erfolgt am Freitag)",
           "Eventuell kann es noch zu Zeit- und Ortsänderungen kommen!"
         ]} />
     </Section>
@@ -190,6 +190,36 @@ const App = props => {
         ]} />
     </Section>
     <Hero
+      img="img/beermile-1.jpeg" />
+    <Section heading="Ausrüstung">
+      <Typography variant="body1">
+        Bad Taste hat sich als Standard etabliert.
+        Von sportlich bis business casual ist alles
+        erlaubt
+      </Typography>
+    </Section>
+    <Hero
+      img="img/beermile-3.jpeg"
+      opacity={0.01}
+    />
+    <Section heading="Profimeile">
+      <Typography variant="body1">
+        In diesem Jahr wird erstmals das Starterfeld
+        in ein „Profifeld“ und ein „Jedermannfeld“ aufgeteilt.
+      </Typography>
+      <Typography variant="body1">
+        Damit soll den „Profis“ eine
+        unvergessliche Stimmung geliefert
+        werden.
+      </Typography>
+      <Typography variant="body1">
+        Das „Jedermannfeld“ erhält
+        damit eine Möglichkeit sich kurz
+        vor dem Start den Ablauf des
+        Wettkampfs noch einmal anzusehen
+      </Typography>
+    </Section>
+    <Hero
       img="img/beermile-11.jpeg"
       opacity={0.01}
     />
@@ -211,39 +241,28 @@ const App = props => {
     <Section heading="Hinweis">
       <Typography variant="body1">
         Es handelt sich hierbei um keine
-        offizielle Veranstaltung. Daher ist diese
-        nicht angemeldet. Gerade deshalb sollte
+        offizielle/angemeldete Veranstaltung. Gerade deshalb sollte
         sich am Veranstaltungsort jeder ruhig
         verhalten. Das Verschütten oder Ausspucken
         von Getränken ist strengstens untersagt.
-        Der Platzwart darf nicht – außer mit seiner
-        Zustimmung – mit Bier angespritzt werden.
-        Eventuell kann es noch zu Zeit- und
-        Ortsänderungen kommen!
+        Aus gegebenem Anlass wird darauf hingewiesen, dass der Platzwart – außer mit seiner
+        Zustimmung – nicht mit Bier angespritzt werden darf.
       </Typography>
       <Typography variant="body1">
         Es handelt sich um keine offizielle
         Veranstaltung, daher übernimmt der
         „Veranstalter“ keine Haftung für das
-        Verhalten der Teilnehmer. Bitte mit
-        Hausverstand und Babyelefanten anreisen
-      </Typography>
-    </Section>
-    <Hero
-      img="img/beermile-1.jpeg" />
-    <Section heading="Ausrüstung">
-      <Typography variant="body1">
-        Bad Taste hat sich als Standard etabliert.
-        Von Sportlich bis business casual ist alles
-        erlaubt
+        Verhalten der Teilnehmer. Bitte weder "3G"-Nachweis, Hausverstand, noch Babyelefanten zu Hause vergessen.
       </Typography>
     </Section>
     <Hero
       img="img/beermile-9.jpeg" />
     <Section heading="Weitere Hinweise">
       <Typography variant="body1">
-        Wer Bier mitbringt kann sich beliebt
-        machen
+        Wer Bier mitbringt, macht sich beliebt!
+      </Typography>
+      <Typography variant="body1">
+        Trichter detto
       </Typography>
       <Typography variant="body1">
         Dieses Event dient als Startschuss für
